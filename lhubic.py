@@ -1,10 +1,9 @@
 from os import getenv
 from re import search
-from time import sleep, time, mktime # , strftime, localtime, timezone
+from time import sleep, time, mktime
 import logging
 import json
 from logging import getLogger
-
 from requests import Session
 import swiftclient
 from sys import version_info

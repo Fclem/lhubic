@@ -198,10 +198,10 @@ my_hubic = HubicClient()
 
 # send_file = 'LICENSE.txt'
 select_container = 'default'
-local_path = 'upload.deb'
+local_path = '/bin/ccat'
 target_path = 'test/%s' % basename(local_path)
-print(my_hubic.hubic.head_object(select_container, target_path))
-my_hubic.download(select_container, local_path, target_path)
+# print(my_hubic.hubic.head_object(select_container, target_path))
+# my_hubic.download(select_container, local_path, target_path)
 my_hubic.upload(select_container, local_path, target_path)
 
 # my_hubic.download(container, '_%s' % local_path, 'target_path')
